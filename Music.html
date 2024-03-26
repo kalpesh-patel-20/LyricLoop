@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="Music.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script defer src="Music.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header id="container">
+        <div class="menu_side">
+            <h1>LYRICLOOP</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>PlayList</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listened</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="Music/pics/1.jpg" alt="">
+                    <h5>Kesariya <br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="Music/pics/2.jpg" alt="">
+                    <h5>Deva Deva<br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="Music/pics/3.jpg" alt="">
+                    <h5>Shish Nawata Hoon<br>
+                        <div class="subtitle">Jubin Nautiyal</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="Music/pics/4.jpg" alt="">
+                    <h5>Maan Meri Jaan<br>
+                        <div class="subtitle">King</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="Music/pics/5.jpg" alt="">
+                    <h5>Sach Keh Raha Hai Deewana<br>
+                        <div class="subtitle">B Praak</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="Music/pics/6.jpg" alt="">
+                    <h5>Waaliyan<br>
+                        <div class="subtitle">Harnoor</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="Music/pics/7.jpg" alt="">
+                    <h5>Abhi Mujh Mein Kahin<br>
+                        <div class="subtitle">Sonu Nigam</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                </li>
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="Music/pics/8.jpg" alt="">
+                    <h5>Rom Rom<br>
+                        <div class="subtitle">MC Square</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                </li>
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="Music/pics/9.jpg" alt="">
+                    <h5>Raabta<br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                </li>
+                <li class="songItem">
+                    <span>10</span>
+                    <img src="Music/pics/10.jpg" alt="">
+                    <h5>Punya Paap<br>
+                        <div class="subtitle">Divine</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                </li>
+                <li class="songItem">
+                    <span>11</span>
+                    <img src="Music/pics/11.jpg" alt="">
+                    <h5>Teri Mitti<br>
+                        <div class="subtitle">B Praak</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="11"></i>                    
+                </li>
+                <li class="songItem">
+                    <span>12</span>
+                    <img src="Music/pics/12.jpg" alt="">
+                    <h5>Jaadugar <br>
+                        <div class="subtitle">Paradox</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                </li>
+                <li class="songItem">
+                    <span>13</span>
+                    <img src="Music/pics/13.jpg" alt="">
+                    <h5>Chogada Tara<br>
+                        <div class="subtitle">Darshan Raval</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                </li>
+                <li class="songItem">
+                    <span>14</span>
+                    <img src="Music/pics/14.jpg" alt="">
+                    <h5>Stay<br>
+                        <div class="subtitle">Justin Bieber</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                </li>
+                <li class="songItem">
+                    <span>15</span>
+                    <img src="Music/pics/15.jpg" alt="">
+                    <h5>Khamoshiyaan<br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="15"></i>            
+                </li>
+                <li class="songItem">
+                    <span>16</span>
+                    <img src="Music/pics/16.jpg" alt="">
+                    <h5>Malang<br>
+                        <div class="subtitle">Ved Sharma</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                </li>
+                <li class="songItem">
+                    <span>17</span>
+                    <img src="Music/pics/17.jpg" alt="">
+                    <h5>Apna Bana Le<br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                </li>
+                <li class="songItem">
+                    <span>18</span>
+                    <img src="Music\pics\18.jpg" alt="">
+                    <h5>Tu Jo Mila<br>
+                        <div class="subtitle">Pritam</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                </li>
+                <li class="songItem">
+                    <span>19</span>
+                    <img src="Music\pics\19.jpg" alt="">
+                    <h5>Duniyaa<br>
+                        <div class="subtitle">Akhil</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                </li>
+            </div>
+        </div>
+        <div class="song_side">
+            <!-- <img src="Music/pics/THn0.gif"> -->
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input id="key" type="text" placeholder="Search Music...">
+            </div>
+            <div id="quote">" WHEN YOU'RE HAPPY YOU ENJOY THE MUSIC<br>
+                WHEN YOU'RE SAD YOU UNDERSTAND THE LYRICS "</div>
+            <div class="content">
+                <!-- <div id="artist">
+                    <img id="singer" src="Music/pics/king.jpg" alt="">
+                </div> -->
+                <div class="playing">
+                    <img id="playing" src="Music/pics/11.jpg">
+                    <div class="border"></div>
+                </div>
+                <div class="groot">
+                    <!-- <img src="Music/pics/groot-removebg-preview.png" alt=""> -->
+                    <img src="Music/pics/demo-image.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="beats">
+                <img src="Music/pics/5uwq.gif">
+                <img src="Music/pics/5uwq.gif">
+                <img src="Music/pics/5uwq.gif">
+                <img src="Music/pics/5uwq.gif">
+                <img src="Music/pics/5uwq.gif">
+            </div> -->
+            
+        </div>
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="Music/pics/11.jpg" alt="" id="poster_master_play">
+            <h5 id="title">
+                Teri Mitti
+                <div class="subtitle">B Praak</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+                <i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
